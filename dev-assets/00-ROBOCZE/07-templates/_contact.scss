@@ -1,0 +1,151 @@
+.t-contact {
+    padding-top: $grid-base * 10;
+    padding-bottom: $grid-base * 10.7;
+
+    &__content {
+        margin-top: $grid-base * 8.1;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-left: $grid-base * 2;
+        padding-right: $grid-base * 2;
+        justify-content: space-between;
+
+        @include medium-up{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+    }
+
+    &__details {
+        width:100%;
+        margin-bottom: $grid-base * 8;
+
+        @include medium-up{
+            width:25%;
+            margin-bottom:0;
+        }
+    }
+
+    &__form {
+        width:100%;
+        margin-bottom: $grid-base * 8;
+
+        @include medium-up{
+            width:63%;
+            margin-bottom: $grid-base * 0;
+        }
+
+    }
+
+    &__form-title {
+        margin-bottom: $grid-base * 3;
+    }    
+        
+    &__icons {
+        display:flex;
+        justify-content: center;
+        align-items:flex-start;
+        flex-direction: row;
+        width: auto;
+        margin-bottom: $grid-base * 8;
+
+        @include medium-up{
+            width:8%;
+            margin-bottom:0;
+            justify-content: flex-end;
+        }
+
+    }
+
+    &__item {
+        display:flex;
+        flex-direction:row;
+
+        @include medium-up{
+            flex-direction:column;
+        }
+    }
+
+    &__icon {    
+        display:block;      
+        background: url('../images/social-icons-contact.png') no-repeat;
+        width: $grid-base * 2.6;
+        height: $grid-base * 2.6;
+        margin: 0 $grid-base*1.5;
+
+        @include medium-up{
+            margin: $grid-base 0;
+        }        
+
+        &--behance{
+            background-position: 0px 3px;            
+        }
+    
+        &--twitter{
+            background-position: 0px -41px;
+        }
+        
+        &--dribble{
+            background-position: 0px -83px;
+        }
+
+        &--facebook{
+            background-position: 0px -125px;
+        }
+
+        &--google{
+            background-position: 0px -170px;
+        }
+
+    }
+
+    &__details-heading {
+        color: $black;
+        font-size: $font-size-6;
+        font-weight: 400;  
+        margin-bottom: $grid-base * 4;    
+    }
+
+    &__form-title{
+        font-size: $font-size-5;
+        font-weight:700;
+    }
+
+    &__input{
+        width:47%;
+    }
+
+    &__textbox{
+        margin-top: $grid-base * 3;
+        margin-bottom: $grid-base * 3;
+        width:100%;
+    }    
+    
+    &__form-submit{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    &__send-btn{
+        display:flex;
+    }
+
+    &__detail{
+        color: $gray-dark;
+        font-size: $font-size-11;
+        font-weight: 400;   
+    }
+
+    &__form-box{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+}

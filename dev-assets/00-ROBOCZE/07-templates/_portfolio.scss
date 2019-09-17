@@ -1,0 +1,101 @@
+.t-portfolio{
+    padding-bottom: 0;
+    padding-top: $grid-base * 3;
+    
+    @include medium-up{
+        padding-top: $grid-base * 9.9;     
+    }
+
+    &__menu{
+        justify-content: center;
+        padding-bottom: $grid-base * 3.7;
+    }
+
+    &__menu-item{
+        font-size: $font-size-10;
+        font-weight: 700;
+        padding-left: $grid-base * 1.5;
+        padding-right: $grid-base * 1.5;
+
+        margin-top: $grid-base * 1.5;
+
+        @include medium-up {
+            margin-top: 0;
+        }
+
+        &--active {
+            background-color: $primary;
+            color: $white;        
+            padding: $grid-base * .7 $grid-base * 1.8;
+            border-radius: $grid-base * .5;
+            
+            &:hover{
+                color: $white;        
+            }
+        }
+    }
+
+    &__images-box{
+        margin:0;
+    }
+
+    &__image {
+        padding:0;
+        height:$grid-base * 30;
+        position:relative;
+        background-size: cover !important;       
+
+        &--one{
+            background: url(../images/portfolio/image1.png) center center no-repeat;
+        }
+        &--two{
+            background: url(../images/portfolio/image2.png) center center no-repeat;
+        }
+        &--three{
+            background: url(../images/portfolio/image3.png) center center no-repeat;
+        }
+        &--four{
+            background: url(../images/portfolio/image4.png) center center no-repeat;
+        }
+        &--five{
+            background: url(../images/portfolio/image5.png) center center no-repeat;
+        }
+        &--six{
+            background: url(../images/portfolio/image6.png) center center no-repeat;
+        }
+        &--seven{
+            background: url(../images/portfolio/image7.png) center center no-repeat;
+        }
+        &--eight{
+            background: url(../images/portfolio/image8.png) center center no-repeat;
+        }
+
+        &--active {
+            background-color: $primary;
+            position:absolute;
+            width:100%;
+            height:100%;
+            opacity:0.9;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            color: $white;
+        }
+    }
+   
+    &--radius{
+        border: 2px solid $white;
+        display:flex;
+        width:$grid-base * 4;
+        height:$grid-base * 4;
+        margin-bottom: $grid-base * 2.4;
+        border-radius: 50%;
+        align-items:center;
+        justify-content:center;
+    }
+
+    &--text-second{
+        margin-top: $grid-base * .5;
+    }
+}

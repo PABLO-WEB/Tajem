@@ -1,0 +1,21 @@
+.t-site-story{
+    padding-top: $grid-base * 7;
+    padding-bottom: $grid-base * 7;
+
+    &__left {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+
+        & img {
+            height: $grid-base * 23.5;
+        }
+    }
+
+
+    &__text {
+        margin-bottom: $grid-base * 3.1;
+        opacity: $opacity-3;
+        letter-spacing: $letter-spacing-5; 
+    }
+}

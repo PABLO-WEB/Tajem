@@ -1,0 +1,77 @@
+// Kolory
+$white: #ffffff;
+$black: #000000;
+
+$very-light-black: #413d4b;
+$light-black: #333333;
+$dark-light-black: #2f2d35;
+
+$gray-light-1: #fafafa;
+$gray-light-2: #f9f9f9;
+$gray-light-3: #f0f0f0;
+$gray-light-4: #f3f3f3;
+
+$gray-dark-1: #e1e1e1;
+$gray-dark-2: #c2c2c2;
+$gray-dark-3: #9f9f9f;
+$gray-dark-4: #8a8a8a;
+
+$accent: #00e0d0;
+
+$gradient-violet: linear-gradient(to right, rgba(9, 5, 47, 0.8509803921568627) 0%, rgba(49, 29, 94, 0.8509803921568627) 100%);
+
+$gradient-blue: linear-gradient(to right, $accent 0%, #4aa3cc 100%);
+
+// Tekst
+$font-size-base: 1rem;
+$font-size-1: $font-size-base *  0.813; // 13px
+$font-size-2: $font-size-base *  0.875; // 14px
+$font-size-3: $font-size-base *  0.938; // 15px
+$font-size-4: $font-size-base *  1.375; // 22px
+$font-size-5: $font-size-base *  2; // 32px
+
+// Grubosc tekstu
+$font-weight-1: 100;
+$font-weight-2: 200;
+$font-weight-3: 300;
+$font-weight-4: 400;
+$font-weight-5: 500;
+$font-weight-6: 600;
+$font-weight-7: 700;
+$font-weight-8: 800;
+$font-weight-9: 900;
+
+// Wysokość wiersza
+$line-height-1: 1.63;
+$line-height-2: 1.57;
+$line-height-3: 1.69;
+$line-height-4: 1.71;
+$line-height-5: 1.73;
+$line-height-6: 1.86;
+
+// Odstępy od znaków
+$letter-spacing-1: 0.02rem;
+$letter-spacing-2: 0.021rem;
+$letter-spacing-3: 0.022rem;
+$letter-spacing-4: 0.025rem;
+$letter-spacing-5: 0.026rem;
+$letter-spacing-6: 0.044rem;
+$letter-spacing-7: 0.047rem;
+$letter-spacing-8: 0.05rem;
+$letter-spacing-9: 0.066rem;
+$letter-spacing-10: 0.069rem;
+
+// Przezroczystosc
+$opacity-1: .5;
+$opacity-2: .7;
+$opacity-3: .75;
+$opacity-4: .85;
+$opacity-5: .9;
+
+// Siatka
+$grid-base: 10px;
+$gutter: $grid-base * 1.5;
+
+// Breakpoint
+$bp-medium: '800px';
+$bp-large: '1200px';

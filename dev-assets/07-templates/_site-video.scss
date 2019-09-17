@@ -1,0 +1,23 @@
+.t-site-video {
+    background: $gradient-violet, url('../images/front/city/city_1x.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    display:flex;
+    align-items: center;
+    height: $grid-base * 55;
+    
+    color:$white;
+
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+        margin-top: $grid-base * 3.4;        
+        text-transform: uppercase;
+        font-weight: $font-weight-5; 
+        letter-spacing: $letter-spacing-8;
+        display: block;              
+    }  
+}

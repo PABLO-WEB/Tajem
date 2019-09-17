@@ -1,0 +1,57 @@
+.c-contact{
+
+    &__input{
+        border: 1px solid rgba( $black, .1 );
+        outline:0;
+        width:100%;
+        padding-top: $grid-base * 1.8;
+        padding-bottom: $grid-base * 1.8;
+        padding-left: $grid-base * 2.1;
+        margin-bottom: $grid-base * 2.1;
+    }
+
+    &__input::placeholder {
+        opacity: $opacity-1;
+        color: $very-light-black;
+        font-size: $font-size-2;
+        font-weight: $font-weight-3;
+        letter-spacing: $letter-spacing-6;
+    }
+
+    &__input::moz-placeholder {
+        color: $very-light-black;
+    }
+
+    &__input::ms-placeholder {
+        color: $very-light-black;
+    }
+
+    &__textarea{
+        width:100%;
+        padding-top: $grid-base * 1.8;
+        padding-bottom: $grid-base * 1.8;
+        padding-left: $grid-base * 2.1;
+        height: $grid-base * 46;
+        border: 1px solid rgba( $black, .1 );
+        outline:0;
+        margin-bottom: $grid-base * 2.1;
+    }
+
+    &__textarea::placeholder {
+        opacity: $opacity-1;
+        color: $very-light-black;
+        font-family: Roboto;
+        font-size: $font-size-2;
+        font-weight: $font-weight-4;
+        letter-spacing: $letter-spacing-6;
+    }
+
+    &__textarea::moz-placeholder {
+        color: $very-light-black;
+    }
+
+    &__textarea::ms-placeholder {
+        color: $very-light-black;
+    }
+
+}

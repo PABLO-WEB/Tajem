@@ -1,0 +1,92 @@
+.t-site-header {
+    background: url('../images/top-header.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color:$white;
+    height: calc(100vh - 25px);
+    min-height: $grid-base * 85;
+    max-height: $grid-base * 86;
+    
+    &__nav {
+        background-color: $violet-very-dark;
+        position:fixed;
+        top:0;
+        width:100%;
+    }
+    
+    &__top{
+        padding-top: $grid-base * 2.4;
+        padding-bottom: $grid-base * 1.9;
+    }
+
+    &__content {
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+
+    &--title{
+        border-left:1px solid #32b0ee;
+        color: $white;
+        opacity: 0.3;
+        padding-left: $grid-base * 2.1;
+    }
+
+    &__menu {
+        margin-top: $grid-base * 2;
+
+        @include large-up {
+            text-align:right;
+            margin-top:0;
+        }
+    }
+
+    &__hero-box{
+        text-align: center;
+        padding-bottom: $grid-base * 5.9;
+        padding-top: $grid-base * 20;
+        margin: 0 auto;
+        
+        @include large-up {
+            padding-bottom: $grid-base * 10.9;
+            padding-top: $grid-base * 48;
+        }
+    }
+
+    &__intro-text {
+        font-weight: 300;
+        font-size: $font-size-3;
+    }
+
+    &--accent {
+        color: $primary;
+    }
+
+    &__welcome{
+        padding-bottom: $grid-base * 2.2;
+    }
+
+    &__label{
+        opacity: .9;
+        position:relative;
+
+    }
+
+    &__label::after, &__label::before{
+        content:' ';
+        position: absolute;
+        width:28px;
+        border-top:1px solid #0feb9e;
+        transform: trnaslateY(-50%);
+        top: 50%;
+        opacity:1;
+}
+
+    &__label::after{
+        margin-left:$grid-base * 3.3;
+    }
+
+    &__label::before{
+        margin-left:$grid-base * -6.3;
+    }
+}

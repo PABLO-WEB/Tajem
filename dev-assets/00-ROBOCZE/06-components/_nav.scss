@@ -1,0 +1,20 @@
+.c-nav {
+
+    &__item {
+        color:$white;
+        display: none;
+        text-align: center;
+        width: 100%;
+
+        &:hover {
+            color: $primary;
+        }
+
+        @include large-up {
+            display: inline-block;
+            margin-left: $grid-base * 2;
+            margin-right: $grid-base * 2;
+            width: auto;
+        }
+    }
+}

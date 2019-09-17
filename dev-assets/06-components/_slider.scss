@@ -1,0 +1,16 @@
+.c-icon-slider{
+
+    &__item {
+        width: 10px;
+        height: 10px;
+        border: 1px solid $gray-dark-2;
+        border-radius: 50%;
+        display:inline-block;
+        margin-right: $grid-base * .5;
+        
+        &--active{
+            background-color: $accent;
+        }
+    }
+
+}

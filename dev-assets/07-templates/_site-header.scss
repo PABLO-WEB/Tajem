@@ -1,0 +1,78 @@
+.t-site-header {
+    background: $gradient-violet, url('../images/slider/bg-image_1x.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color:$white;
+    height: $grid-base * 67;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+
+    // Menu
+    
+    &__top {
+        position:fixed;
+        top:0;
+        padding-top: $grid-base * 1.5;
+        padding-bottom: $grid-base * 1.5;
+        width:100%;
+    }
+
+    &__menu {
+
+        @include large-up {
+            text-align:right;
+            margin-top:0;
+        }
+    }
+
+    &__nav-item {
+        text-transform: uppercase;
+        margin-left: $grid-base;
+        margin-right: $grid-base;
+
+        &--active{
+            color:$accent;
+        }
+    }
+
+    // Slider
+
+    &__hero {
+        text-align:center;
+    }   
+
+    &__title{
+        position:relative;
+        display:flex;
+        justify-content: center;
+        padding-bottom: $grid-base * 2.1;
+        
+        &::after {
+            content:'';
+            width: $grid-base * 5;
+            height: 1px;
+            position:absolute;
+            background-color: $accent;
+            bottom:0;
+        }
+    }
+
+    &__text{
+        width:100%;
+        display:block;
+        margin:$grid-base*3 auto $grid-base*5 auto;
+ 
+        @include large-up{
+            width: 65%;
+        }
+    }
+
+    &__icon{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: $grid-base * 7;
+    }
+
+}

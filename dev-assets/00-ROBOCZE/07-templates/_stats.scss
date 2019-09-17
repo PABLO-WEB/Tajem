@@ -1,0 +1,107 @@
+.t-stats {
+    background: linear-gradient(rgba(6, 32, 51, 0.8),rgba(6, 32, 51, 0.8)), url('../images/bg-stats.jpg') no-repeat;
+    background-size: cover;
+    background-position:center center;
+    padding-top: $grid-base * 10;
+    padding-bottom: $grid-base * 15.5;
+
+    &__heading{
+        margin-bottom:$grid-base * 2.1;
+    }
+
+    &__icons{
+        &::after, &::before{
+            border-top: 1px solid $white;   
+            opacity: .5;         
+        }
+    }
+
+    &__icon{
+        color:$white;
+        opacity:1;
+    }
+
+    &__items{
+        display:flex;
+        justify-content: space-between;
+    }
+
+    &__icons-box{
+        display:flex;
+        justify-content: center;
+
+        margin-bottom: $grid-base * 8;
+
+        &:first-of-type{
+            margin-top: $grid-base * 10; 
+        }
+
+        @include large-up{
+            margin-bottom:0;
+
+            &:first-of-type{
+                margin-top: 0; 
+            }
+        }
+    }
+
+    &__container{
+        display:flex;
+        flex-direction:column;
+    }
+
+    &__icons-heading{
+        margin: 0 auto;
+        display:flex;
+        border: 2px solid rgba(255, 255, 255, 0.4);;        
+        border-radius: 50%;
+        align-items:center;
+        justify-content:center;
+        width: $grid-base * 13;
+        height: $grid-base * 13;
+    }
+
+    &__icon-heading{
+        &--clock{
+            background: url(../images/stats/clock.png) center center no-repeat;
+            width: $grid-base * 4;
+            height: $grid-base * 4; 
+        }
+        &--people{
+            background: url(../images/stats/people.png) center center no-repeat;
+            width: $grid-base * 3.8;
+            height: $grid-base * 3.8; 
+        }
+        &--rocket{
+            background: url(../images/stats/rocket.png) center center no-repeat;
+            width: $grid-base * 3.3;
+            height: $grid-base * 3.3; 
+        }
+        &--cup{
+            background: url(../images/stats/cup.png) center center no-repeat;
+            width: $grid-base * 4;
+            height: $grid-base * 3.8; 
+        } 
+    }
+
+    &__heading-box {
+        margin-top:$grid-base * 2;
+    }
+
+    &__text-heading {
+        color: $white;
+        text-align: center;
+
+        &--title{
+            font-size: $font-size-2;
+            font-weight:600;
+        }
+
+        &--subtitle{
+            font-size: $font-size-8;
+            font-weight:400;    
+            text-transform:uppercase;       
+        }
+
+    }
+}

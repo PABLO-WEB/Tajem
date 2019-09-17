@@ -1,0 +1,43 @@
+.t-feature {
+    background-color:$gray;
+    padding-bottom: $grid-base * 3;
+    padding-top: $grid-base * 3;
+    width:100%;
+
+    &__content {
+        margin-top: $grid-base * 6.7;
+        margin-bottom: $grid-base * 8;
+    }
+    
+    @include medium-up{
+        padding-bottom: $grid-base * 5.4;
+        padding-top: $grid-base * 7.7;     
+    }
+
+    &__text{
+        margin-bottom: $grid-base * 7;
+        margin-top: $grid-base * 4;
+    }
+
+    &__info{
+        margin-bottom: $grid-base * 8;
+        display:flex;
+
+        @include large-up{
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-icon{
+        padding-right: $grid-base * 1.7;
+        color: $primary;
+    }
+
+    &--radius {
+        border: 2px solid $primary;
+        display:block;
+        padding: $grid-base * 1.2;
+        border-radius: 50%;
+    }
+
+}

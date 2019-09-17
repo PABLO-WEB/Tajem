@@ -1,0 +1,30 @@
+.t-job-offers{
+
+    &__intro{
+        padding-bottom: $grid-base * 7;
+        padding-top: $grid-base * 7;
+    }
+
+    &__intro-left{
+        margin-bottom: $grid-base * 3;
+
+        @include medium-up {
+            margin-bottom: 0;
+        }
+    } 
+    
+    &__intro-right {
+        @include medium-up {
+            text-align: right;
+        }
+    }
+
+    &__offers {
+        padding-bottom: $grid-base * 3;
+    }
+
+    &__item {
+        margin-top: $grid-base * 2;
+    }
+
+}

@@ -1,0 +1,21 @@
+.c-list {
+
+    &__item {
+        margin-bottom: $grid-base * 1.5;
+
+        &--compact{
+            margin-bottom: $grid-base * 1.25;
+        }
+    }
+
+    &__icon{
+        background: url('../images/angle-right.png') 0 50% no-repeat;
+        display:inline-block;
+        height:14px;
+        width:26px;
+    }
+
+    &--unstyled {
+        list-style-type: none;
+    }
+}

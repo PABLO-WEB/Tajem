@@ -1,0 +1,15 @@
+.c-map {
+    width:100%;
+    height:$grid-base * 21.5;
+
+    background: url('../images/map.png') no-repeat;
+    background-size:cover;
+
+    background-position: 20% center;   
+    border-bottom: 5px solid $black;
+
+    @include medium-up{
+        background-position: center center;   
+    }
+
+}

@@ -1,0 +1,54 @@
+.t-newsletter {
+    background-color: $primary;
+    padding-bottom: $grid-base *3;
+    padding-top: $grid-base *3;
+
+    &__content {
+
+        @include large-up {
+            padding-left: $grid-base * 8;
+            padding-right: $grid-base * 8;
+        }
+
+    }
+
+    &__heading {
+        color: $white;
+        margin-bottom: $grid-base * 2;
+
+        @include large-up {
+            margin-bottom: 0;
+        }
+    }
+
+    &__heading-first {
+        display:block;
+        font-size: $font-size-4;
+        font-weight: bold;
+        margin-bottom: 3px;
+    }
+    
+    &__heading-second {
+        display:block;
+        font-size: $font-size-5;
+    }
+
+    &__form {
+        display:flex;
+        flex-wrap:wrap;
+    }   
+
+    &__input {
+        flex: 0 0 100%;
+        max-width: 100%; // DLA IE 10/11
+        margin-bottom: $grid-base * 2;
+        margin-right: $grid-base * 2;
+        
+        @include medium-up {
+            flex: 0 0 75%; 
+            max-width: 75%; // DLA IE 10/11
+            margin-bottom: 0;
+        }
+    }
+
+}

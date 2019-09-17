@@ -1,0 +1,29 @@
+.c-social-icon{
+    display:flex;
+    align-items: baseline;
+
+    &__item{
+        display:block;
+        width: $grid-base * 3.5;
+        height: $grid-base * 3.5;
+        margin-right: $grid-base * .8;
+        background: url('../../images/social-icons.png') no-repeat;
+
+        &--twitter{
+            background-position: $grid-base * -4.3 0;
+        }
+        &--dribble{
+             background-position: $grid-base * -8.7 0;
+        }
+        &--insta{
+            background-position: $grid-base * -13 0;
+        }
+        &--google{
+            background-position: $grid-base * -17.2 0;
+        }
+        &--yt{
+            background-position: $grid-base * -21.6 0;
+        }
+
+    }
+}

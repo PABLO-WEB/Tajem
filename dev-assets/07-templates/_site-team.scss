@@ -1,0 +1,66 @@
+.t-site-team {
+    background: $gradient-violet, url('../images/front/forest2/forest2_1x.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: $grid-base * 71;
+
+    padding-top: $grid-base * 7.1;
+    
+    color:$white;
+
+    &__box{
+        padding-left: $grid-base;   
+        padding-right: $grid-base;   
+    }
+
+    &__image{
+
+        & img{
+            width:100%;
+            display: block;
+        }
+    }
+
+    &__heading{
+        text-align: center;
+        padding-top: $grid-base * 2.3;
+        padding-bottom: $grid-base * 2.3;
+        border: 1px solid rgba(225, 225, 225, 0.5);
+        
+        &--first-item{
+
+            color: $white;
+            font-size: $font-size-2;
+            font-weight: $font-weight-7;
+            text-transform: uppercase;
+            letter-spacing: $letter-spacing-6;
+            margin-bottom: $grid-base * 1.2;
+            
+        }
+
+        &--second-item{
+
+            opacity: $opacity-2;
+            color: $gray-light-1;
+            font-size: $font-size-1;
+            font-weight: $font-weight-3;
+            text-transform: uppercase;
+
+        }
+    }
+
+    &__description{
+        text-align: center;
+        margin-top: $grid-base * 7;
+        
+        color: $gray-light-4;
+        font-size: $font-size-2;
+
+        letter-spacing: $letter-spacing-6;
+    }
+
+    &__btn{
+        margin-top: $grid-base * 2.6;
+        margin-bottom: $grid-base * 6.9;
+    }
+}

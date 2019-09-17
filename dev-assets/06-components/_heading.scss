@@ -1,0 +1,59 @@
+.c-heading {
+    margin-bottom: $grid-base * 4.8;
+    flex-direction: column;
+    position:relative;
+    padding-bottom: $grid-base * 1.8;
+
+    &__title{
+        padding-bottom: $grid-base * 1.4;
+    }
+
+    &__description{
+        opacity: $opacity-3;
+        color: $dark-light-black;
+
+        font-family: "Playfair Display";
+        font-size: $font-size-2;
+        font-weight: $font-weight-4;
+
+        text-align: center;
+
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &--white {
+        color:$white;
+    }
+
+    &__before{
+
+        &--white{
+
+            &::before{
+                content: '';
+                opacity: 0.3;
+                width: $grid-base * 5;
+                opacity: 0.2;
+                border: 1px solid $white;
+                position: absolute;
+                bottom:0;
+            }
+
+        }
+
+        &--gray{
+
+            &::before{
+                content: '';
+                opacity: 0.3;
+                width: $grid-base * 5;
+                border: 1px solid $very-light-black;
+                position: absolute;
+                bottom:0;
+            }
+
+        }
+    }
+    
+}

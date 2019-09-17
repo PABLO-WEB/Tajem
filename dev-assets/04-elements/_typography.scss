@@ -1,0 +1,72 @@
+p {
+    font-weight: $font-weight-3;
+    line-height: $line-height-2;
+    margin-top: $grid-base * 3;
+}
+
+h1 {
+    color: $white;
+    font-family: 'Playfair Display', serif;
+    font-size: $font-size-5;
+    font-weight: $font-weight-9;
+    letter-spacing: $letter-spacing-1;
+    
+    margin-bottom: $grid-base * 2.1;
+}
+
+h2 {
+    font-size: $font-size-4;
+    font-weight: $font-weight-7;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-10;
+}
+
+h3 {
+    color: $very-light-black;
+    font-family: "Playfair Display", serif;
+    font-size: $font-size-4;
+    font-weight: $font-weight-7;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-10;
+}
+
+h4 {
+    color: $very-light-black;
+    font-size: $font-size-2;
+    font-weight: $font-weight-8;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-6;
+}
+
+
+h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: $font-size-4;
+    font-weight: $font-weight-7;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-10;
+}
+
+
+h6 {
+    color: $white;
+    font-size: $font-size-3;
+    font-weight: $font-weight-9;
+    line-height: $line-height-5;
+    letter-spacing: $letter-spacing-7;
+    text-transform: uppercase;    
+}
+
+a {
+    color: $white;
+    font-size: $font-size-1;
+    font-weight: $font-weight-9;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-2;
+
+    &:hover {
+        color: $accent;
+    }
+}

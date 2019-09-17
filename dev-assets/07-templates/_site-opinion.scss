@@ -1,0 +1,90 @@
+.t-site-opinion{
+    background: $gradient-violet, url('../images/front/forest2/forest2_1x.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    min-height: $grid-base * 55;
+    
+    color:$white;
+
+    padding-bottom: $grid-base * 6.9;
+    padding-top: $grid-base * 6.9;
+    
+    &__icon{
+        display:flex;
+        margin-bottom: $grid-base * 4.2;
+        
+        & img{
+            margin: 0 auto;
+        }
+    }
+
+    &__cite-box {
+        margin:0 auto;
+    }
+
+    &__cite {
+        text-align: center;
+        opacity: $opacity-4;
+        font-family: "Playfair Display";
+        font-size: $font-size-base;
+        font-weight: $font-weight-4;
+        line-height: $line-height-1;
+        letter-spacing: $letter-spacing-4;
+    }
+
+    &__author {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: $grid-base * 5.2;
+        
+        &--title{
+
+            color: $white;
+            font-size: $font-size-2;
+            font-weight: $font-weight-7;
+            text-transform: uppercase;
+            letter-spacing: $letter-spacing-6;
+            margin-bottom: $grid-base * 1.2;
+            
+        }
+
+        &--description{
+
+            opacity: $opacity-2;
+            color: $gray-light-1;
+            font-size: $font-size-1;
+            font-weight: $font-weight-3;
+            text-transform: uppercase;
+
+        }
+
+    }
+
+    &__person{
+        margin: 0 auto;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        margin-top: $grid-base * 4.5;
+
+        &--arrow{
+            color:$gray-dark-3;
+
+        }
+    }
+
+    &__person-box{
+        display:flex;
+        align-items:center;
+        margin-right: $grid-base * 3.5;
+        margin-left: $grid-base * 5;
+    }
+
+    &__image {
+        margin-right: $grid-base * .7;
+        margin-left: $grid-base * .7;
+
+    }
+
+}

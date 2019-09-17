@@ -1,0 +1,23 @@
+.c-btn {
+    cursor:pointer;
+
+    &__icon {
+        margin-right: $grid-base * 1.2;
+        padding-bottom:$grid-base * 1.5;
+    }
+
+    &--light{
+        font-size:$font-size-9;
+        font-weight: 400;
+        color: black;
+        justify-self:flex-end;   
+        background: transparent;
+        outline: 0;
+        border: 0;
+    }
+
+    &--light:hover{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+}

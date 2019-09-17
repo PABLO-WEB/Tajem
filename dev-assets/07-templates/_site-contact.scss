@@ -1,0 +1,23 @@
+.t-site-contact {
+    padding-top: $grid-base * 7;
+    padding-bottom: $grid-base * 7;
+    
+    &__title {
+       padding-bottom: $grid-base * 3.5; 
+    }
+
+    &__btn {
+        margin: 0;
+    }
+
+    &__client-item {
+        display:flex;
+        justify-content: center;
+        margin-bottom: $grid-base * 4.7;
+    }
+
+    &__client-image {
+        margin: 0 auto;
+    }
+
+}

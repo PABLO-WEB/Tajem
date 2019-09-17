@@ -1,0 +1,122 @@
+.t-team {
+    padding-bottom: $grid-base * 12;
+    padding-top: $grid-base * 10.1;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $grid-base * 10.3;
+    }
+
+    &__box{
+        margin-bottom: $grid-base * 4;
+
+        @include medium-up{
+            margin-bottom: $grid-base * 2.1;
+        }
+    }
+
+    &__image{
+        padding:0;
+        height:$grid-base * 30;
+        max-width:$grid-base * 27;
+        position:relative;
+        background-size: cover !important;
+        color:$white;
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+
+        margin: 0 auto;
+        margin-bottom: $grid-base * 2.1;
+        
+        &--one{
+            background: url(../images/team/person1.png) center center no-repeat;
+            filter: grayscale(0);
+        }
+        &--two{
+            background: url(../images/team/person2.png) center center no-repeat;
+        }
+        &--three{
+            background: url(../images/team/person3.png) center center no-repeat;
+        }  
+        &--four{
+            background: url(../images/team/person4.png) center center no-repeat;
+        }  
+        
+        &--active {
+            background-color: #0eb493;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.95;
+            display: flex;
+            text-align: center;
+            padding-top: 23px;
+            padding-left: 23px;
+            padding-right: 23px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+    }
+
+    &--text-first{
+        font-size:$font-size-9;
+        font-weight: 700;
+    }
+
+    &--text-second{
+        color:$white;
+        opacity:1;
+        font-size:$font-size-9;
+        font-weight: 300;
+        line-height: $line-height-lg;
+        margin-top: $grid-base * 1.5;
+    }
+
+    &__icons-box {
+        align-self: flex-end;
+        margin-bottom: $grid-base * 2.3;
+    }
+
+    &__items{
+        display:flex;
+    }
+
+    &__item{
+        display: flex;
+        background: #0c7c66;
+        width: $grid-base * 4.2;
+        height: $grid-base * 4.2;
+        justify-content: center;
+        align-items: center;
+        margin-left: $grid-base * .2;
+        margin-right: $grid-base * .2;
+    }
+
+    &__icon{
+        margin:0;
+        display: block;
+    }
+
+    &__heading{
+        text-align: center;
+
+        &--first-item{
+            font-size: $font-size-8;
+            margin-bottom: $grid-base * .7;
+            font-weight: 600;
+        }
+
+        &--second-item{
+            font-size: $font-size-11;
+            color: $black;
+            font-weight: 600;
+            opacity:0.56;
+        }
+
+        &--active{
+            color: $primary;           
+        }
+    }
+
+}

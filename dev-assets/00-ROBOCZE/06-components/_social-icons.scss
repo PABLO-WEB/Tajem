@@ -1,0 +1,38 @@
+.c-social{
+
+    &__icons-box{
+        margin:0 auto;
+        display:flex;
+        align-items: baseline;
+    }
+
+    &__icon{
+        background: url('../images/social-icons.png') no-repeat;
+        margin-left: $grid-base * .8;
+        margin-right: $grid-base * .8;
+
+        &--twitter{
+            width: $grid-base * 2;
+            height: $grid-base * 2;
+        }
+    
+        &--facebook{
+            width: $grid-base;
+            height: $grid-base * 2;
+            background-position: -36px 0px;
+        }
+        
+        &--pinterest{
+            width: $grid-base * 2;
+            height: $grid-base * 2;
+            background-position: -93px 0px;
+        }
+        
+        &--google{
+            width: $grid-base * 1.8;
+            height: $grid-base * 2;
+            background-position: -64px 0px;
+        }
+        
+    }
+}

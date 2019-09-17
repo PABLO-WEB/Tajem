@@ -1,0 +1,22 @@
+.c-icon-slider{
+
+    &__box{
+        margin: 0 auto;
+
+    }
+
+    &__item {
+        width: 8px;
+        height: 8px;
+        border: 1px solid #0620331a;
+        border-radius: 50%;
+        display:inline-block;
+        margin-left: $grid-base * .7;
+        margin-right: $grid-base * .7;
+
+        &--active{
+            background-color: #062033;
+        }
+    }
+
+}

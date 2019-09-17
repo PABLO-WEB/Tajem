@@ -1,0 +1,75 @@
+.o-col {
+    width: 100%;
+    padding-left: $gutter;
+    padding-right: $gutter;
+
+    &--md25 {
+        @include medium-up {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+
+    &--md33 {
+        @include medium-up {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+    }
+
+    &--md50 {
+        @include medium-up {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    &--lg16 {
+        @include large-up {
+            flex: 0 0 16.6666%;
+            max-width: 16.6666%;
+        }
+    }    
+
+    &--lg25 {
+        @include large-up {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+
+    &--lg33 {
+        @include large-up {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+    }
+
+    &--lg45 {
+        @include large-up {
+            flex: 0 0 45%;
+            max-width: 45%;
+        }
+    }
+
+    &--lg50 {
+        @include large-up {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    &--lg55 {
+        @include large-up {
+            flex: 0 0 55%;
+            max-width: 55%;
+        }
+    }
+
+    &--lg75 {
+        @include large-up {
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+    }
+}

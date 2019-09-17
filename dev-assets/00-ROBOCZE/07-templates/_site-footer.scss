@@ -1,0 +1,63 @@
+.t-site-footer {
+    background: $primary;
+    color:$white;
+    
+    &__main {
+        padding-bottom: $grid-base * 12.5;
+        padding-top: $grid-base * 10;
+    }
+
+    &__header {
+        display:flex;
+        align-items:flex-end;
+        height: $grid-base *5;
+        margin-bottom: $grid-base * 4.4;
+    }
+
+    &__heading{
+        opacity: 0.8;
+        font-size: $font-size-10;
+        font-weight: 700;
+        line-height: 1.71;
+    }
+
+    &--form {
+        margin-bottom: $grid-base * 2.4;
+    }
+
+    &--input {
+        background:transparent;
+        outline: 0;
+        border: 2px solid $white;
+        border-radius: 2px;
+        height: $grid-base * 4.6;
+        background: url('../images/arrow.png') no-repeat 92% 50%;
+        width:100%;
+        padding-left:$grid-base * 1.5;
+        padding-right:$grid-base * 5;
+        color:$white;
+    }
+
+    &__text {
+        line-height:1.85;
+        font-weight: 400;
+        color:$white;
+        opacity:1;
+
+        & strong {
+            font-weight: 600;
+            color: $black;
+        }
+
+        &--line {
+            border-left: 1px solid rgba(6, 32, 50, 0.3);;
+            padding-left: $grid-base * 1.2;
+            margin-bottom: $grid-base * 6;
+        }
+    }
+
+    &__link {
+        color: $white;
+    }
+
+}
